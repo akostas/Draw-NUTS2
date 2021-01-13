@@ -57,7 +57,7 @@ def plot(data, filename):
     countries = gpd.read_file('NUTS_RG_01M_2021_3857_LEVL_0.geojson')
     
     # Define the color boundaries that will be used for the colorbar.
-    bounds = np.array([0, 0.025, 0.05, 0.075, 0.1, 0.125, 0.15, 0.175, 0.2, 0.25, 0.3, 0.35, 0.4,                   0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 1.0])
+    bounds = np.array([0, 0.025, 0.05, 0.075, 0.1, 0.125, 0.15, 0.175, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 1.0])
     norm = colors.BoundaryNorm(boundaries=bounds, ncolors=len(bounds)+1)
     
     # Define the colormar
