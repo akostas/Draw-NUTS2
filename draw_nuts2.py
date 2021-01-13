@@ -29,7 +29,6 @@ def readData(filename):
         Second column is their respective values.
     '''
     data = pd.read_csv('average-triangles-common.txt', sep=' ')
-    data.rename(columns={'NormTriangles':'Value'}, inplace=True) # To remove
     return data
 
 
